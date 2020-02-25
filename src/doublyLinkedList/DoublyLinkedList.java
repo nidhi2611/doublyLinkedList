@@ -45,4 +45,33 @@ public class DoublyLinkedList {
         }
 
     }
+
+    public Node deleteFRomBegin() {
+        Node response = null;
+        if (head != null) {
+            response = head;
+            head = head.getNext();
+            head.setPrevious(null);
+        }
+        return response;
+    }
+
+    public Node deleteFromLat() {
+        Node response = null;
+        if (head != null) {
+            Node temp = head;
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            if (temp.getPrevious() != null) {
+                response = temp;
+                temp = temp.getPrevious();
+                temp.setNext(null);
+            } else {
+                response = head;
+                head = null;
+            }
+        }
+        return response;
+    }
 }
