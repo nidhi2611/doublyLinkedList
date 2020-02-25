@@ -11,5 +11,6 @@ public class Main {
         doublyLinkedList.insertAtEnd(50);
         doublyLinkedList.insertAtEnd(60);
         doublyLinkedList.insertAtEnd(70);
+        doublyLinkedList.traverse();
     }
 }

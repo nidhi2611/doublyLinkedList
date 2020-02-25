@@ -28,9 +28,21 @@ public class DoublyLinkedList {
     public void traverse() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.getData() + " ");
+            System.out.print(temp.getData() + " ");
             temp = temp.getNext();
         }
     }
 
+    public void insertAtBegin(int daata) {
+        Node node = new Node(daata);
+        if (head == null) {
+            node.setNext(head);
+            head = node;
+        } else {
+            head.setPrevious(node);
+            node.setNext(head);
+            head = node;
+        }
+
+    }
 }
