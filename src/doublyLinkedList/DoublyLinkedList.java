@@ -31,6 +31,7 @@ public class DoublyLinkedList {
             System.out.print(temp.getData() + " ");
             temp = temp.getNext();
         }
+        System.out.println();
     }
 
     public void insertAtBegin(int daata) {
@@ -56,7 +57,7 @@ public class DoublyLinkedList {
         return response;
     }
 
-    public Node deleteFromLat() {
+    public Node deleteFromLast() {
         Node response = null;
         if (head != null) {
             Node temp = head;
