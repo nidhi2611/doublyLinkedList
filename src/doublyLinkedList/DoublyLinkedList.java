@@ -11,5 +11,18 @@ public class DoublyLinkedList {
         return head;
     }
 
+    public void insertAtEnd(int data) {
+        Node node = new Node(data);
+        if (head == null) {
+            head = node;
+        } else {
+            Node temp = head;
+            if (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            node.setPrevious(temp);
+            temp.setNext(node);
+        }
+    }
 
 }
