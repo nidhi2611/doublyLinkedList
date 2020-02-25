@@ -11,4 +11,16 @@ public class Node {
         previous = null;
     }
 
+    public int getData() {
+        return data;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public Node getPrevious() {
+        return previous;
+    }
+
 }
