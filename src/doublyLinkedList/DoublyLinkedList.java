@@ -3,8 +3,8 @@ import node.Node;
 public class DoublyLinkedList {
     private Node head;
 
-    public DoublyLinkedList(Node h) {
-        head = h;
+    public DoublyLinkedList() {
+        head = null;
     }
 
     public Node getHead() {
@@ -24,5 +24,6 @@ public class DoublyLinkedList {
             temp.setNext(node);
         }
     }
+
 
 }
