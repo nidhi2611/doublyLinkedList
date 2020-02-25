@@ -23,4 +23,15 @@ public class Node {
         return previous;
     }
 
+    public void setData(int d) {
+        data = d;
+    }
+
+    public void setNext(Node n) {
+        next = n;
+    }
+
+    public void setPrevious(Node p) {
+        previous = p;
+    }
 }
