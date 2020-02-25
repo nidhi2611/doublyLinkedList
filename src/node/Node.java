@@ -5,5 +5,10 @@ public class Node {
     private Node next;
     private Node previous;
 
+    public Node(int data) {
+        this.data = data;
+        next = null;
+        previous = null;
+    }
 
 }
