@@ -25,5 +25,12 @@ public class DoublyLinkedList {
         }
     }
 
+    public void traverse() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.getData() + " ");
+            temp = temp.getNext();
+        }
+    }
 
 }
